@@ -73,7 +73,7 @@
             <div class="main-section-container">
                 <div class="heading-title text-center">
                     <h1 style="margin-bottom:0px; font-size: 32px; color: #b13476">Detalles del plan</h1>
-										<p>Rellene sus datos y confirme su reserva</p>
+										<p>Jhofre Ingresa Tus Datos</p>
                 </div>
 
               </div>
