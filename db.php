@@ -8,5 +8,5 @@ $DB_PORT = $_ENV["DB_PORT"];
 $URL = $_ENV["URL"];
 
 
- $con = mysqli_connect("$DB_USER","$DB_PASS","$DB_NAME","$DB_PORT","$URL");
+ $con = mysqli_connect($DB_USER,$DB_PASS,$DB_NAME,$DB_PORT,$URL);
 ?>
