@@ -40,7 +40,7 @@
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active"><a class="nav-link" href="index.php">Inicio</a></li>
 						<li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-						<li class="nav-item"><a class="nav-link" href="pagina2.php">Pedido</a></li>
+						<li class="nav-item"><a class="nav-link" href="pagina2.php">Pedidos</a></li>
 						<li class="nav-item"><a class="nav-link" href="banquet.php">Banquetes</a></li>
 						<li class="nav-item"><a class="nav-link" href="contact.html">Contactenos</a></li>
 					</ul>
