@@ -152,11 +152,11 @@
 								<?php
 								require 'db.php';
 
-								$ex = mysqli_query($conn, "select * from categoria where id_categoria = 1");
+								$ex = mysqli_query($conn, "select * from categoria where cid = 1");
 								while ($r = mysqli_fetch_array($ex)) {
 								?>
 									<div class="col-lg-4 col-md-6 special-grid drinks">
-										<a href="takeaway.php">
+										<a href="pedido.php">
 											<div class="gallery-single fix">
 												<img src="<?php echo $r['img'];  ?>" class="img-fluid" alt="Image">
 												<div class="why-text">
@@ -179,7 +179,7 @@
 								<?php
 								require 'db.php';
 
-								$ex = mysqli_query($con, "select * from categoria where id_categoria = 3");
+								$ex = mysqli_query($con, "select * from categoria where cid = 3");
 								while ($r = mysqli_fetch_array($ex)) {
 								?>
 									<div class="col-lg-4 col-md-6 special-grid drinks">
@@ -190,7 +190,7 @@
 													<h4><?php echo $r['name'];  ?></h4>
 													<h5>
 														<?php
-														$cid = $r['id_categoria'];
+														$cid = $r['cid'];
 														$q1 = mysqli_query($con, "select * from menu where tipo= $cid");
 														while ($r1 = mysqli_fetch_array($q1)) {
 															echo $r1['name'] . "<br>";
@@ -206,11 +206,11 @@
 								<?php
 								require 'db.php';
 
-								$ex = mysqli_query($con, "select * from categoria where id_categoria = 5");
+								$ex = mysqli_query($con, "select * from categoria where cid= 5");
 								while ($r = mysqli_fetch_array($ex)) {
 								?>
 									<div class="col-lg-4 col-md-6 special-grid drinks">
-										<a href="takeaway.php">
+										<a href="pedido.php">
 											<div class="gallery-single fix">
 												<img src="<?php echo $r['img'];  ?>" class="img-fluid" alt="Image">
 												<div class="why-text">
