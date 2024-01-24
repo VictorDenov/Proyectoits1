@@ -1,9 +1,10 @@
+
 <?php
-$DB_HOST = $_ENV["DB_HOST"];
-$DB_PORT = $_ENV["DB_PORT"];
-$DB_USER = $_ENV["DB_USER"];
-$DB_PASS = $_ENV["DB_PASS"];
-$DB_NAME = $_ENV["DB_NAME"];
+$DB_HOST = $_ENV["RAILWAY_TCP_PROXY_DOMAIN"];
+$DB_PORT = $_ENV["RAILWAY_TCP_PROXY_PORT"];
+$DB_USER = "root";
+$DB_PASS = $_ENV["MYSQL_ROOT_PASSWORD"];
+$DB_NAME = $_ENV["MYSQL_DATABASE"];
 
 $conn = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME, $DB_PORT);
 
@@ -13,10 +14,4 @@ if ($conn->connect_error) {
 
 $conn->close();
 ?>
-
-
-
-
-
-
 
