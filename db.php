@@ -1,13 +1,13 @@
 <?php
 
 $host = "bl0wa2m5azpzbzvdcqvp-mysql.services.clever-cloud.com";
-$servername = "bl0wa2m5azpzbzvdcqvp";
 $username = "umhwkiqvyol6lj5o";
+$port ="21682";
 $password = "yG72JY7HveBnCJsbQ46a";
-$dbname = "tu_base_de_datos";
+$dbname = "bl0wa2m5azpzbzvdcqvp";
 
 // Crea la conexión
-$conn = new mysqli($host,$username,$password,$dbname);
+$conn = new mysqli($host,$username,$port,$password,$dbname);
 
 // Verifica la conexión
 if ($conn->connect_error) {
