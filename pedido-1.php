@@ -1,18 +1,18 @@
 <?php
         error_reporting(0);
 		session_start();
-		if(isset($_GET['id_categoria'])){
+		if(isset($_GET['cid'])){
 		    
-		$_SESSION['id_categoria'] = $_GET['id_categoria'];
-		    $cid = $_GET['id_categoria'];
+		$_SESSION['cid'] = $_GET['cid'];
+		    $cid = $_GET['cid'];
 		
-		    $_SESSION['id_categoria'] = $cid;
+		    $_SESSION['cid'] = $cid;
 		    
 		}
 		else{
-		   $cid = $_SESSION['id_categoria']; 
+		   $cid = $_SESSION['cid']; 
 		}
-		if(isset($_SESSION['id_categoria'])){
+		if(isset($_SESSION['cid'])){
 		}
 		else{
 		    header("location:pedido.php");
@@ -280,7 +280,7 @@
         									<button class="btn btn-danger" onclick="decremtnItem(<?php echo $r['mid']; ?>); return false;"> - </button>
                                         </span>
                                         <span class="verticalDevider">|</span>
-                                		<input type="hidden" name="hidden_name" value="<?php echo $r['Nombrem']; ?>">
+                                		<input type="hidden" name="hidden_name" value="<?php echo $r['name']; ?>">
                                     	<input type="hidden" name="hidden_price" value="<?php echo $r['precio']; ?>">
                                     <button type="submit" name="add" class="itemToCart"><i class="fa fa-shopping-cart"></i>Agregar Al Carrito</button>
                                     </form>

@@ -107,8 +107,8 @@
                 <div class="products wow fadeInRight">
                     <?php
 					    while($r = mysqli_fetch_array($exec)){
-					            $cid = $r['id_categoria'];
-					           $q = mysqli_query($conn,"select count(Nombrem) from menu where tipo=$cid");
+					            $cid = $r['cid'];
+					           $q = mysqli_query($conn,"select count(name) from menu where tipo=$cid");
 					           while($r1 = mysqli_fetch_array($q)){
 				    ?>
 		                    <div class="item" style="border-radius:10px; border:1px solid #b13476;">
@@ -116,12 +116,12 @@
 		                            <img style="max-width: 100%; max-height: 100%;" src="/admin/<?php echo $r['img']; ?>" />
 		                        </div>
 		                        <div class="cntBx">
-		                            <div class="item-title" style="color : #b13476;"><?php echo $r['Nombre']; ?></div>
+		                            <div class="item-title" style="color : #b13476;"><?php echo $r['name']; ?></div>
 		                            <div class="description">
 		                                <p>Total Items :  <?php echo $r1[0]; ?> </p>
 		                            </div>
 										<div style="padding-top:15px;">
-		                                	<a class="btn btn-lg btn-circle btn-outline-new-white" style="font-size:14px; padding:10px; border-radius:8px;" href="pedido-1.php?id_categoria=<?php echo $r['cid']; ?>">Orden Nueva</a>
+		                                	<a class="btn btn-lg btn-circle btn-outline-new-white" style="font-size:14px; padding:10px; border-radius:8px;" href="pedido-1.php?name=<?php echo $r['cid']; ?>">Orden Nueva</a>
 										</div>
 		                          </div>
 		                    </div>
