@@ -48,16 +48,7 @@ INSERT INTO `banquet_menu` (`reserva_id`, `detalles`, `precio`, `description`) V
 (191, '                        Drink-1    Starter        Veggies-1    Paneer(Special)  Kadhi  Pulav  Roti Naan     Ice-Cream_With_Two_Sauce    Soup    Butter-Milk Special-Sweet                        ', 250, ''),
 (192, '                            Starter  Salad-2 Farsan  Baked-Dish         Kadhi   Biryani     Paratha      Soup     Special-Sweet                        ', 210, 'Customized Plan'),
 (192, '                        Selected Items Here                        ', 210, ''),
-(192, '                        Drink-1     Salad-1   Snacks Baked-Dish       Paneer(Special)    Pulav       Sweet(Regular)  Ice-Cream_With_Three_Sauce                                ', 220, ''),
-(192, '                        Selected Items Here                        ', 210, ''),
-(192, '                        Selected Items Here                        ', 190, ''),
-(192, '                        Selected Items Here                        ', 100, ''),
-(192, '                        Selected Items Here                        ', 200, ''),
-(193, '                        Drink-1    Starter    Snacks    Veggies-1   Paneer Paneer(Special) Dal  Rice                 Butter-Milk                         ', 200, ''),
-(193, '                         Drink-2 Soup-1   Salad-1    Baked-Dish   Veggies-1    Paneer(Special) Dal  Rice    Naan     Ice-Cream_With_Two_Sauce      Tea/Coffee                           ', 250, ''),
-(193, '                         Drink-2   Starter    Snacks    Veggies-1    Paneer(Special) Dal  Rice   Roti  Tawa-Roti    Ice-Cream_With_Two_Sauce       Chaat  Special-Sweet                        ', 250, ''),
-(196, '                        Drink-1    Starter    Snacks    Veggies-1   Paneer Paneer(Special) Dal  Rice                                          ', 200, ''),
-(203, '                        Selected Items Here                        ', 260, '');
+
 
 -- --------------------------------------------------------
 
@@ -165,7 +156,9 @@ CREATE TABLE `menu` (
   `ver_pedido` varchar(10) NOT NULL,
   `precio` int(10) NOT NULL,
   `tipo` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1; 
+
+
 
 --
 -- Dumping data for table `menu`
