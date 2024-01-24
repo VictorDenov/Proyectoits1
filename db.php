@@ -1,10 +1,9 @@
 <?php
 
-$host = "bl0wa2m5azpzbzvdcqvp-mysql.services.clever-cloud.com";
-$username = "umhwkiqvyol6lj5o";
-$port =21682;
-$password = "yG72JY7HveBnCJsbQ46a";
-$dbname = "bl0wa2m5azpzbzvdcqvp";
+$host="bl0wa2m5azpzbzvdcqvp-mysql.services.clever-cloud.com";
+$username="umhwkiqvyol6lj5o";
+$password="yG72JY7HveBnCJsbQ46a";
+$dbname="bl0wa2m5azpzbzvdcqvp";
 
 // Crea la conexión
 $conn = new mysqli($host,$username,$port,$password,$dbname);
