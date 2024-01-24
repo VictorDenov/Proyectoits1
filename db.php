@@ -1,9 +1,9 @@
 <?php
-$DB_HOST = $_ENV["MYSQLHOST"];
-$DB_PORT = $_ENV["MYSQLPORT"];
-$DB_USER = $_ENV["MYSQLUSER"];
-$DB_PASS = $_ENV["MYSQLPASSWORD"];
-$DB_NAME = $_ENV["MYSQL_DATABASE"];
+$DB_HOST = $_ENV["monorail.proxy.rlwy.net"];
+$DB_PORT = $_ENV["28758"];
+$DB_USER = $_ENV["root"];
+$DB_PASS = $_ENV["e15hcAEEHd14hEa233G3Dc5552F5a6FA"];
+$DB_NAME = $_ENV["railway"];
 
 $conn = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME, $DB_PORT);
 
