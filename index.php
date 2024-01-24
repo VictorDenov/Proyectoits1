@@ -53,7 +53,7 @@
 	<div id="slides" class="cover-slides">
     <div class="slides-container">
         <div class="slide text-left">
-            <img src="images/s1.png" alt="">
+            <img src="images/encebollado.png" alt="">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -66,7 +66,7 @@
             </div>
         </div>
         <div class="slide text-left">
-            <img src="images/s2.png" alt="">
+            <img src="images/guatita2.png" alt="">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
