@@ -1,20 +1,23 @@
 <?php
-$DB_HOST = $_ENV["DB_HOST"];
-$DB_PORT = $_ENV["DB_PORT"];
-$DB_USER = $_ENV["DB_USER"];
-$DB_PASS = $_ENV["DB_PASS"];
-$DB_NAME = $_ENV["DB_NAME"];
 
-$conn = new mysqli($DB_HOST,$DB_USER,$DB_PASS,$DB_NAME,$DB_PORT);
+$host="bl0wa2m5azpzbzvdcqvp-mysql.services.clever-cloud.com";
+$username="umhwkiqvyol6lj5o";
+$password="yG72JY7HveBnCJsbQ46a";
+$dbname="bl0wa2m5azpzbzvdcqvp";
 
+// Crea la conexión
+$conn = new mysqli($host,$username,$port,$password,$dbname);
+
+// Verifica la conexión
 if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
 }
+echo "Conexión exitosa";
+// ... Puedes realizar consultas y operaciones con la base de datos aquí
 
+// Cierra la conexión al finalizar
+$conn->close();
 ?>
-
-
-
-
 
 
 
