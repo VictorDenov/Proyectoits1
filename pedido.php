@@ -91,7 +91,7 @@
 	require 'db.php';
 
 
-	$exec = mysqli_query($conn,"select * from categoria order by Nombre");
+	$exec = mysqli_query($conn,"select * from categoria order by name");
 
 ?>
 
