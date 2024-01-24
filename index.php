@@ -79,7 +79,7 @@
             </div>
         </div>
         <div class="slide text-left">
-            <img src="images/s3.png" alt="">
+            <img src="images/salon.jpg" alt="">
             <div class="container">
                 <div class="row" style="color:black;">
                     <div class="col-md-12">
@@ -266,7 +266,7 @@
 								while ($r = mysqli_fetch_array($ex)) {
 								?>
 									<div class="col-lg-4 col-md-6 special-grid drinks">
-										<a href="takeaway.php">
+										<a href="pedido.php">
 											<div class="gallery-single fix">
 												<img src="<?php echo $r['img'];  ?>" class="img-fluid" alt="Image">
 												<div class="why-text">
@@ -369,18 +369,18 @@
 			<div class="tz-gallery">
 				<div class="row">
 					<div class="col-sm-12 col-md-4 col-lg-4">
-						<a class="lightbox" href="plan_image/Rs. 10000.jpeg">
-							<img class="img-fluid" style="height: 12%;" src="plan_image/Rs. 10000.jpeg" alt="Gallery Images">
+						<a class="lightbox" href="plan_image/banquet1.jpg"">
+							<img class="img-fluid" style="height: 12%;" src="plan_image/banquet1.jpg" alt="Gallery Images">
 						</a>
 					</div>
 					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="plan_image/Rs. 8000.jpeg">
-							<img class="img-fluid" style="height: 12%;" src="plan_image/Rs. 8000.jpeg" alt="Gallery Images">
+						<a class="lightbox" href="plan_image/banquet2.jpg"">
+							<img class="img-fluid" style="height: 12%;" src="plan_image/banquet2.jpg"" alt="Gallery Images">
 						</a>
 					</div>
 					<div class="col-sm-6 col-md-4 col-lg-4">
-						<a class="lightbox" href="plan_image/Rs. 21000.jpeg">
-							<img class="img-fluid" src="plan_image/Rs. 21000.jpeg" alt="Gallery Images">
+						<a class="lightbox" href="plan_image/banquet3.jpg"">
+							<img class="img-fluid" src="plan_image/banquet3.jpg"" alt="Gallery Images">
 						</a>
 					</div>
 				</div>

@@ -165,11 +165,11 @@ CREATE TABLE `menu` (
 --
 
 INSERT INTO `menu` (`mid`, `name`, `image`, `description`, `priority`, `restaurant_show`, `ver_pedido`, `precio`, `tipo`) VALUES
-(18, 'Tomato Soup', '', '', 2, 'YES', 'YES', 90, 1),
-(213, 'Mineral Water', '', '', 2, 'YES', 'YES', 20, 23),
-(214, 'Cold Drink 200ml.', '', '', 2, 'YES', 'YES', 20, 23),
-(215, 'Fix Thaali', '', '2 Subji, 3 Butter Roti, Dal Fry, Jeera Rice, Roasted Papad, Butter Milk', 2, 'YES', 'YES', 120, 25),
-(216, 'Special Thaali', '', 'Paneer Subji, Veg. Subji, Butter Roti 3 / Tawa Roti 4 / Tandoori Roti 3, Dal Fry, Jeera Rice & Pulao, Sweet, Roasted Papad, Butter Milk, Onion & Pickle', 2, 'YES', 'YES', 140, 25);
+(18, 'Sopa de tomate', '', '', 2, 'YES', 'YES', 90, 1),
+(213, 'Agua mineral', '', '', 2, 'YES', 'YES', 20, 23),
+(214, 'Bebida 200ml.', '', '', 2, 'YES', 'YES', 20, 23),
+(215, 'Plato corriente', '', '2 Esencia, 3 Mantequilla,Alubias , Arroz, Papad Asado,Crema de leche', 2, 'SÍ', 'SÍ', 120, 25),
+(216, 'Plato  Especial', '', 'Paneer Subji, Veg. Subji, 3 Butter Roti / 4 Tawa Roti / 3 Tandoori Roti, Dal Fry, Jeera Rice & Pulao, Postre, Papad Asado, Butter Milk, Cebolla & Encurtido', 2, 'SÍ', 'SÍ', 140, 25);
 
 -- --------------------------------------------------------
 
