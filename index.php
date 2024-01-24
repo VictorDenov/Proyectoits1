@@ -206,7 +206,7 @@
 								<?php
 								require 'db.php';
 
-								$ex = mysqli_query($con, "select * from categoria where cid= 5");
+								$ex = mysqli_query($conn, "select * from categoria where cid= 5");
 								while ($r = mysqli_fetch_array($ex)) {
 								?>
 									<div class="col-lg-4 col-md-6 special-grid drinks">
