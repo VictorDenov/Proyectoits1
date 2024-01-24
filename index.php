@@ -218,7 +218,7 @@
 													<h5>
 														<?php
 														$cid = $r['cid'];
-														$q1 = mysqli_query($con, "select * from menu where type= $cid");
+														$q1 = mysqli_query($con, "select * from menu where tipo= $cid");
 														while ($r1 = mysqli_fetch_array($q1)) {
 															echo $r1['name'] . "<br>";
 														}
@@ -235,7 +235,7 @@
 								<?php
 								require 'db.php';
 
-								$ex = mysqli_query($conn, "select * from categoria where id_categoria = 7");
+								$ex = mysqli_query($conn, "select * from categoria where cid = 7");
 								while ($r = mysqli_fetch_array($ex)) {
 								?>
 									<div class="col-lg-4 col-md-6 special-grid drinks">
@@ -247,7 +247,7 @@
 													<h5>
 														<?php
 														$cid = $r['cid'];
-														$q1 = mysqli_query($con, "select * from menu where type= $cid");
+														$q1 = mysqli_query($con, "select * from menu where tipo= $cid");
 														while ($r1 = mysqli_fetch_array($q1)) {
 															echo $r1['name'] . "<br>";
 														}
@@ -262,7 +262,7 @@
 								<?php
 								require 'db.php';
 
-								$ex = mysqli_query($conn, "select * from categoria where id_categoria = 8");
+								$ex = mysqli_query($conn, "select * from categoria where cid = 8");
 								while ($r = mysqli_fetch_array($ex)) {
 								?>
 									<div class="col-lg-4 col-md-6 special-grid drinks">
@@ -289,7 +289,7 @@
 								<?php
 								require 'db.php';
 
-								$ex = mysqli_query($conn, "select * from categoria where id_categoria = 20");
+								$ex = mysqli_query($conn, "select * from categoria where cid = 20");
 								while ($r = mysqli_fetch_array($ex)) {
 								?>
 									<div class="col-lg-4 col-md-6 special-grid drinks">
@@ -301,7 +301,7 @@
 													<h5>
 														<?php
 														$cid = $r['cid'];
-														$q1 = mysqli_query($conn, "select * from menu where type= $cid");
+														$q1 = mysqli_query($conn, "select * from menu where tipo= $cid");
 														while ($r1 = mysqli_fetch_array($q1)) {
 															echo $r1['name'] . "<br>";
 														}
