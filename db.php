@@ -16,8 +16,4 @@ if ($conn->connect_error) {
 
 echo "Conexión exitosa";
 
-// Ahora puedes realizar consultas u operaciones en la base de datos aquí
-
-// Cierra la conexión al finalizar
-$conn->close();
 ?>
