@@ -57,7 +57,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="m-b-20"><strong>Bienvenido a <br> JDV Restaurant</strong></h1>
+                        <h1 class="m-b-20"><strong>Bienvenidos a <br> JDV Restaurant</strong></h1>
                         <p class="m-b-40">Premium Restaurante & Servicios de Banquete. <br>
                             ¡Reserve ya su pedido!</p>
                         <p><a class="btn btn-lg btn-outline-secondary" href="#services">Orden Nueva</a></p>
@@ -104,7 +104,7 @@
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12 text-center">
 					<div class="inner-column">
-						<h1>Welcome To <span>JDV RESTAURANT</span></h1>
+						<h1>Bienvenidos <span>JDV RESTAURANT</span></h1>
 						<p>JDV Restauarant es un referente en sabor e higiene. Ofrecemos comida de la mejor calidad con servicios de primera.
 							También ofrecemos un servicio de comida para llevar. JDV Banquet es el lugar perfecto para todas sus funciones. ¡Ahora reservar su banquete en línea y celebrar la función fuera de línea!</p>
 						<a class="btn btn-lg btn-circle btn-outline-new-white" href="#services">Reserve un pedido ahora</a>
