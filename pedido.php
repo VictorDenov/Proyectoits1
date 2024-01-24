@@ -78,9 +78,9 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="content-wrap-1">
-			    <a href="takwaway.php"><i class="fa fa-utensils icon1" style="color: #b13476; border: 2px solid #b13476"></i></a>
-					<a href="takeaway-1.php"><i class="fa fa-cart-plus icon1" style="color: black; border: 2px solid black"></i></a>
-			    <a href="takeaway-2.php"><i class="fas fa-user-circle icon1" style="color: black; border: 2px solid black"></i></a>
+			    <a href="pedido.php"><i class="fa fa-utensils icon1" style="color: #b13476; border: 2px solid #b13476"></i></a>
+					<a href="pedido-1.php"><i class="fa fa-cart-plus icon1" style="color: black; border: 2px solid black"></i></a>
+			    <a href="pedidos-2.php"><i class="fas fa-user-circle icon1" style="color: black; border: 2px solid black"></i></a>
 
     	</div>
 		</div>
@@ -91,7 +91,7 @@
 	require 'db.php';
 
 
-	$exec = mysqli_query($con,"select * from categoria order by Nombre");
+	$exec = mysqli_query($conn,"select * from categoria order by Nombre");
 
 ?>
 
@@ -108,7 +108,7 @@
                     <?php
 					    while($r = mysqli_fetch_array($exec)){
 					            $cid = $r['id_categoria'];
-					           $q = mysqli_query($con,"select count(Nombrem) from menu where tipo=$cid");
+					           $q = mysqli_query($conn,"select count(Nombrem) from menu where tipo=$cid");
 					           while($r1 = mysqli_fetch_array($q)){
 				    ?>
 		                    <div class="item" style="border-radius:10px; border:1px solid #b13476;">
@@ -121,7 +121,7 @@
 		                                <p>Total Items :  <?php echo $r1[0]; ?> </p>
 		                            </div>
 										<div style="padding-top:15px;">
-		                                	<a class="btn btn-lg btn-circle btn-outline-new-white" style="font-size:14px; padding:10px; border-radius:8px;" href="pedido-1.php?id_categoria=<?php echo $r['id_categoria']; ?>">Orden Nueva</a>
+		                                	<a class="btn btn-lg btn-circle btn-outline-new-white" style="font-size:14px; padding:10px; border-radius:8px;" href="pedido-1.php?id_categoria=<?php echo $r['cid']; ?>">Orden Nueva</a>
 										</div>
 		                          </div>
 		                    </div>
@@ -142,7 +142,7 @@
 				<div class="col-md-4 arrow-right">
 					<i class="fa fa-volume-control-phone"></i>
 					<div class="overflow-hidden">
-						<h4>Phone</h4>
+						<h4>Telefono</h4>
 						<p class="lead">
 							84690 00683, &nbsp;
 							81281 41047
@@ -154,7 +154,7 @@
 					<div class="overflow-hidden">
 						<h4>Email</h4>
 						<p class="lead">
-							restaurantyajman@gmail.com
+							restaurant@gmail.com
 						</p>
 					</div>
 				</div>
@@ -163,7 +163,7 @@
 					<div class="overflow-hidden">
 						<h4>Location</h4>
 						<p class="lead">
-							Yajman Restaurant, Dharm Nagar II, Sabarmati, Ahmedabad.
+							 Restaurant, Lican, Riobamba, Ecuador.
 						</p>
 					</div>
 				</div>
@@ -177,28 +177,28 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
-					<h3>Managed By</h3>
+					<h3>Gestionado Por</h3>
 					<p>
 					<img src="./images/j-logo.png" height="80px" width="80px" style="border-radius:12px">
-					<span style="padding:8px">'J The Vision' Group </span>
+					<span style="padding:8px">'JDV' Group </span>
 					</p>
 					<ul style="padding:10px">
-						<li style="color:white"> Restaurant </li>
-						<li style="color:white"> Banquet </li>
-						<li style="color:white"> Marraige Hall Booking </li>
-						<li style="color:white"> Architect & Home Design </li>
+						<li style="color:white"> Restaurante </li>
+						<li style="color:white"> Banquete </li>
+						<li style="color:white"> Reserva de salas para bodas</li>
+						<li style="color:white"> Arquitecto y diseño de viviendas </li>
 
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<h3>Contact information</h3>
-					<p class="lead">Yajman Restaurant, Dharm Nagar II, Sabarmati, Ahmedabad, Gujarat 380005</p>
+					<h3>Informacion de Contacto</h3>
+					<p class="lead">JDV Restaurant,RIOBAMBA, ECUADOR, CHIMBORAZO, Lican</p>
 					<p class="lead"><a href="tel:8469000683">84690 00683,</a> &nbsp;<a href="tel:8128141047">81281 41047</a></p>
-					<p><a href="mailto:restaurantyajman@gmail.com"> restaurantyajman@gmail.com</a></p>
+					<p><a href="mailto:restaurantyajman@gmail.com"> restaurant@gmail.com</a></p>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<h3>Opening hours</h3>
-					<p><span class="text-color">Banquet Timing :</span> 8AM to 11PM</p>
-					<p><span class="text-color">Restaurant (Takeaway) : </span> 10:30AM - 3:30PM, 7PM - 11PM</p>
+					<p><span class="text-color">Horario del banquete:</span> 8AM to 11PM</p>
+					<p><span class="text-color">Restaurant (Pedido) : </span> 10:30AM - 3:30PM, 7PM - 11PM</p>
 				</div>
 			</div>
 		</div>
@@ -207,7 +207,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<p class="company-name">Rights Reserved. &copy; 2020 <a href="./index.php">&nbsp;Yajman Restaurant & Banquet</a> <br>Managed By 'J The Vision' Group<br>Developed By <a href="https://thewebmate.in" target="_blank">Webmate Web Services</a></p>
+						<p class="company-name">Rights Reserved. &copy; 2024 <a href="./index.php">&nbsp;JDV Restaurant & Banquet</a> <br>Managed By 'J The Vision' Group<br>Developed By <a href="https://thewebmate.in" target="_blank">Victor Guaraca</a></p>
 					</div>
 				</div>
 			</div>

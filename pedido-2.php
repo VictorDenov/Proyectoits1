@@ -210,14 +210,14 @@
         					if($exec)
         					{
         						
-        						$exec2 = mysqli_query($con,"select max(tuid) from takeaway_user");
+        						$exec2 = mysqli_query($conn,"select max(tuid) from pedido_user");
         						$r = mysqli_fetch_array($exec2);
         						$tid = $r[0];
         						foreach($_SESSION['cart'] as $keys => $value)
         						{
         							$pid = $value['product_id'];
         							$quantity = $value['item_quantity'];
-        							$o_type = 'takeaway';
+        							$o_type = 'pedido';
         							
         							$q1 = "insert into food_order(userid,mid,quantity,order_type) values($tid,$pid,'$quantity','$o_type')";
         							$e = mysqli_query($con,$q1);
@@ -252,7 +252,7 @@
 		    function email($tid , $mail)
 			{
                 require 'db.php';
-                $query = mysqli_query($con,"select * from takeaway_user where tuid = $tid");
+                $query = mysqli_query($conn,"select * from takeaway_user where tuid = $tid");
                 $to = $mail;
                 $subject = 'Takeaway - Yajman Restaurant & Banquet';
                

@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
      <!-- Site Metas -->
-    <title>Yajman Restaurant and Banquet</title>
+    <title>Yajman Restaurant y Banquet</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -141,7 +141,7 @@
 				<div class="col-lg-12">
 					<div class="heading-title text-center">
 						<h2>Our Services </h2>
-						<h2 style="color : #b13476">Takeaway Orders & Banquet Hall</h2>
+						<h2 style="color : #b13476">Pedidos y Ordenes</h2>
 					</div>
 				</div>
 			</div>
@@ -149,14 +149,14 @@
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12 text-center" style="border-right:2px solid black">
 					<div class="inner-column" style="text-align: center;">
-						<p>Takeaway Orders Service is available at our restaurant. </p>
-						<a class="btn btn-lg btn-circle btn-outline-new-white" href="takeaway.php">Order Now</a>
+						<p>Nuestro restaurante dispone de servicio de pedidos para llevar. </p>
+						<a class="btn btn-lg btn-circle btn-outline-new-white" href="takeaway.php">Pedir ahora</a>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12 text-center" >
 					<div class="inner-column" style="text-align: center;">
-						<p>Attractive Banquet Hall for all your ceremonies. </p>
-						<a class="btn btn-lg btn-circle btn-outline-new-white" href="banquet.php">Book Now</a>
+						<p>Atractivo salón de banquetes para todas sus ceremonias. </p>
+						<a class="btn btn-lg btn-circle btn-outline-new-white" href="banquet.php">Reserve ahora</a>
 					</div>
 				</div>
 			</div>
@@ -293,7 +293,7 @@ $(document).on('click', '.additem', function(e){
                                 <td>
                                     <?php echo number_format($value["item_quantity"] * $value["product_price"], 2); ?> &#8377;</td>
                                 <td><a href="takeaway.php?action=delete&id=<?php echo $value["product_id"]; ?>"><span
-                                            class="text-danger">Remove Item</span></a></td>
+                                            class="text-danger">Quitar </span></a></td>
 
                             </tr>
                             <?php
@@ -352,7 +352,7 @@ $(document).on('click', '.additem', function(e){
 					<div class="overflow-hidden">
 						<h4>Location</h4>
 						<p class="lead">
-							Yajman Restaurant, Dharm Nagar II, Sabarmati, Ahmedabad.
+						
 						</p>
 					</div>
 				</div>
@@ -372,22 +372,22 @@ $(document).on('click', '.additem', function(e){
 					<span style="padding:8px">'J The Vision' Group </span>
 					</p>
 					<ul style="padding:10px">
-						<li style="color:white"> Restaurant </li>
-						<li style="color:white"> Banquet </li>
+						<li style="color:white"> Restaurante </li>
+						<li style="color:white"> Banquetes </li>
 						<li style="color:white"> Marraige Hall Booking </li>
 						<li style="color:white"> Architect & Home Design </li>
 
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<h3>Contact information</h3>
-					<p class="lead">Yajman Restaurant, Dharm Nagar II, Sabarmati, Ahmedabad, Gujarat 380005</p>
+					<p class="lead"></p>
 					<p class="lead"><a href="tel:8469000683">84690 00683,</a> &nbsp;<a href="tel:8128141047">81281 41047</a></p>
 					<p><a href="mailto:restaurantyajman@gmail.com"> restaurantyajman@gmail.com</a></p>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<h3>Opening hours</h3>
-					<p><span class="text-color">Banquet Timing :</span> 8AM to 11PM</p>
-					<p><span class="text-color">Restaurant (Takeaway) :</span> 10:30AM - 3:30PM, 7PM - 11PM</p>
+					<p><span class="text-color">Horario del banquete:</span> 8AM to 11PM</p>
+					<p><span class="text-color">Restaurant (pedido) :</span> 10:30AM - 3:30PM, 7PM - 11PM</p>
 				</div>
 			</div>
 		</div>
@@ -396,7 +396,7 @@ $(document).on('click', '.additem', function(e){
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<p class="company-name">Rights Reserved. &copy; 2020 <a href="./index.html">&nbsp;Yajman Restaurant & Banquet</a> <br>Managed By 'J The Vision' Group</p>
+						<p class="company-name">Rights Reserved. &copy; 2020 <a href="./index.html">&nbsp;Restaurant & Banquet</a> <br></p>
 					</div>
 				</div>
 			</div>
