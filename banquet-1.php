@@ -95,7 +95,7 @@
 	require 'db.php';
 
 
-	$exec = mysqli_query($con,"select * from banquet_plans order by precio");
+	$exec = mysqli_query($conn,"select * from banquet_plans order by precio");
 
 ?>
 
