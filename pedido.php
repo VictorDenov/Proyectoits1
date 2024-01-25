@@ -100,8 +100,8 @@
         <div class="main-section-categ">
             <div class="main-section-container">
                 <div class="heading-title text-center">
-                    <h1 style="margin-bottom:0px; font-size: 32px; color: #b13476">Choose the Food Category</h1>
-										<p>Please Select the menu as per your choice.</p>
+                    <h1 style="margin-bottom:0px; font-size: 32px; color: #b13476">Elija la categoría de alimentos</h1>
+										<p>Seleccione el menú que prefiera.</p>
 				</div>
 				
                 <div class="products wow fadeInRight">
