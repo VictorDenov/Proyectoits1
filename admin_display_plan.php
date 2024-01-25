@@ -1,7 +1,7 @@
 <?php
   require 'db.php';
   
-  $query = "select * from banquet_plans order by price";
+  $query = "select * from banquet_plans order by precio";
   $exec = mysqli_query($con,$query);
   if($exec)
   {
@@ -89,11 +89,11 @@
                 <tr>
 					<td><?php echo $i; $i++; ?></td>
                     <td><?php echo $r['plan_name']; ?></td>
-                    <td><?php echo number_format($r['price']); ?></td>
-                    <td><?php echo $r['feature_list']; ?></td>
+                    <td><?php echo number_format($r['precio']); ?></td>
+                    <td><?php echo $r['lista_caracteristicas']; ?></td>
                     <td><img src='<?php echo $r['img']; ?>' height='200' width= '200' /></td>   
-                    <td><a href="update_plan.php?mbid=<?php echo $r['mbid']; ?>"> Update Plan </a></td>
-                    <td><a href="admin_remove_plan.php?mbid=<?php echo $r['mbid']; ?>"> Remove Plan </a></td>
+                    <td><a href="update_plan.php?mbid=<?php echo $r['mbid']; ?>"> Actualizar plan </a></td>
+                    <td><a href="admin_remove_plan.php?mbid=<?php echo $r['mbid']; ?>"> Eliminar plan </a></td>
                 </tr>
                 <?php
                     }

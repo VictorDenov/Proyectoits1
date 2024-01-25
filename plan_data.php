@@ -15,7 +15,7 @@
    
    if($name != '' && $price != '' && $feature != '' && $filename != '')
    {
-   		$query = "insert into banquet_plans(feature_list,plan_name,precio,img) values('$feature','$name','$price','$folder')";
+   		$query = "insert into banquet_plans(lista_caracteristicas,plan_name,precio,img) values('$feature','$name','$price','$folder')";
    		$exec = mysqli_query($con,$query);
    		
    		if($exec)
