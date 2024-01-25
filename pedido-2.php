@@ -205,7 +205,7 @@
         					$q = "insert into user_llevar (Nombre,email,mobile_no,address,date_time,total_bill,status,time_of_delivery,payment_mode)
         						  values('$name','$mail','$mob','$address','$today','$total',0,'$time','cash') ";
         					
-        					$exec = mysqli_query($con,$q);
+        					$exec = mysqli_query($conn,$q);
     					
         					if($exec)
         					{
@@ -252,7 +252,7 @@
 		    function email($tid , $mail)
 			{
                 require 'db.php';
-                $query = mysqli_query($conn,"select * from takeaway_user where tuid = $tid");
+                $query = mysqli_query($conn,"select * from pedido_user where id_pedido = $tid");
                 $to = $mail;
                 $subject = 'Takeaway - Yajman Restaurant & Banquet';
                

@@ -7,7 +7,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>JDV Restaurante y Banquete</title>
+	<title>JDV</title>
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -163,10 +163,10 @@
 													<h4><?php echo $r['name'];  ?></h4>
 													<h5>
 														<?php
-														$cid = $r['id_categoria'];
+														$cid = $r['cid'];
 														$q1 = mysqli_query($con, "select * from menu where tipo= $cid");
 														while ($r1 = mysqli_fetch_array($q1)) {
-															echo $r1['Nombrem'] . "<br>";
+															echo $r1['name'] . "<br>";
 														}
 														?></h5>
 												</div>
@@ -183,7 +183,7 @@
 								while ($r = mysqli_fetch_array($ex)) {
 								?>
 									<div class="col-lg-4 col-md-6 special-grid drinks">
-										<a href="takeaway.php">
+										<a href="pedido.php">
 											<div class="gallery-single fix">
 												<img src="<?php echo $r['img'];  ?>" class="img-fluid" alt="Image">
 												<div class="why-text">
@@ -239,7 +239,7 @@
 								while ($r = mysqli_fetch_array($ex)) {
 								?>
 									<div class="col-lg-4 col-md-6 special-grid drinks">
-										<a href="takeaway.php">
+										<a href="pedido.php">
 											<div class="gallery-single fix">
 												<img src="<?php echo $r['img'];  ?>" class="img-fluid" alt="Image">
 												<div class="why-text">
