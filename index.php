@@ -521,7 +521,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
-					<h3>GESTIONADO POR</h3>
+					<h3>GESTIONADO POR Victor Hugo Guaraca Guaraca</h3>
 					<p>
 						<img src="./images/logoits.png" height="80px" width="80px" style="border-radius:12px">
 						<span style="padding:8px">'Instituto Superior Riobamba' Instituto </span>
