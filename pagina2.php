@@ -116,7 +116,7 @@
 		                            <img style="max-width: 100%; max-height: 100%;" src="/admin/<?php echo $r['img']; ?>" />
 		                        </div>
 		                        <div class="cntBx">
-		                            <div class="item-title" style="color : #b13476;"><?php echo $r['Nombre']; ?></div>
+		                            <div class="item-title" style="color : #b13476;"><?php echo $r['name']; ?></div>
 		                            <div class="description">
 		                                <p>Total Items :  <?php echo $r1[0]; ?> </p>
 		                            </div>
