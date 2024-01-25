@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
      <!-- Site Metas -->
-    <title>Yajman Restaurant and Banquet</title>
+    <title>JDV</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -56,7 +56,7 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
 				<a class="navbar-brand" href="index.php">
-					<img src="images/logo-y.jpg" alt="" />
+					<img src="" alt="" />
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
 				  <span class="navbar-toggler-icon"></span>
